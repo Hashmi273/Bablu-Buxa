@@ -1,0 +1,103 @@
+/* BABLU BUXA REAL ESTATE - 40% WHITE | 40% BLUE | 20% GOLD THEME */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  /* 40% ROYAL BLUE PALETTE (From Logo) */
+  --color-blue-primary: #0B2545;
+  --color-blue-deep: #06182D;
+  --color-blue-slate: #133E68;
+  --color-blue-light: #EBF3FA;
+
+  /* 40% CRISP WHITE & PEARL PALETTE */
+  --color-white: #FFFFFF;
+  --color-offwhite: #F8FAFC;
+  --color-pearl: #F1F5F9;
+
+  /* 20% GOLD ACCENT PALETTE (From Logo) */
+  --color-gold: #C69214;
+  --color-gold-bright: #D4AF37;
+  --color-gold-light: #FBF4DC;
+  --color-gold-dark: #9E740E;
+}
+
+body {
+  background-color: var(--color-offwhite);
+  color: #1e293b;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #0B2545;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C69214;
+}
+
+/* Gold Gradient Text */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #B38012 0%, #D4AF37 50%, #9E740E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Blue Gradient Text */
+.blue-gradient-text {
+  background: linear-gradient(135deg, #06182D 0%, #0B2545 70%, #133E68 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Slider Custom Styling */
+input[type="range"] {
+  height: 6px;
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #C69214;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(198, 146, 20, 0.6);
+  border: 3px solid #FFFFFF;
+}
+
+/* Property Tab Filter Active State */
+.prop-tab-btn.active {
+  background-color: #0B2545 !important;
+  color: #FFFFFF !important;
+  border-color: #C69214 !important;
+}
+
+/* Card Transitions */
+.property-card {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.property-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 30px -10px rgba(11, 37, 69, 0.15), 0 0 1px rgba(198, 146, 20, 0.4);
+}
+
+/* Modal animation */
+#propertyModal {
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bablu Buxa | Luxury Real Estate & Prime Properties</title>
+  <meta name="description" content="Bablu Buxa Real Estate - Discover premium residential villas, luxury apartments, commercial spaces, and verified plots with 100% legal assurance.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              // 40% Blue
+              blue: '#0B2545',
+              deepBlue: '#06182D',
+              slateBlue: '#133E68',
+              lightBlue: '#F0F6FC',
+              
+              // 40% White & Crisp
+              white: '#FFFFFF',
+              pearl: '#F8FAFC',
+              cardBg: '#FFFFFF',
+              
+              // 20% Gold
+              gold: '#C69214',
+              goldBright: '#D4AF37',
+              goldLight: '#FBF4DC',
+              goldDark: '#9E740E',
+            }
+          },
+          fontFamily: {
+            heading: ['Cinzel', 'serif'],
+            display: ['Playfair Display', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-brand-pearl text-slate-800 font-sans antialiased selection:bg-brand-gold selection:text-white">
+
+  <!-- Floating Quick Actions -->
+  <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+    <a href="https://wa.me/919876543210?text=Hi%20Bablu%20Buxa%20Real%20Estate,%20I%20am%20interested%20in%20luxury%20properties." target="_blank" class="w-14 h-14 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full flex items-center justify-center shadow-2xl transition transform hover:scale-110 group relative border-2 border-white" title="WhatsApp Chat">
+      <i class="fab fa-whatsapp text-2xl"></i>
+      <span class="absolute right-16 bg-brand-deepBlue text-white text-xs px-3 py-1.5 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition shadow-lg pointer-events-none border border-brand-gold">Chat on WhatsApp</span>
+    </a>
+    <a href="tel:+919876543210" class="w-14 h-14 bg-brand-gold hover:bg-brand-goldDark text-white rounded-full flex items-center justify-center shadow-2xl transition transform hover:scale-110 group relative border-2 border-white" title="Call Now">
+      <i class="fas fa-phone-alt text-xl"></i>
+      <span class="absolute right-16 bg-brand-deepBlue text-white text-xs px-3 py-1.5 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition shadow-lg pointer-events-none border border-brand-gold">Call Property Advisor</span>
+    </a>
+  </div>
+
+  <!-- Top Announcement Bar (Deep Blue Background + Gold Details) -->
+  <div class="bg-brand-deepBlue border-b border-brand-gold/30 py-2 px-4 text-xs font-medium text-white">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center gap-4">
+        <span class="flex items-center gap-1.5 text-brand-goldBright font-semibold"><i class="fas fa-shield-alt"></i> RERA Approved & 100% Legal Clear Titles</span>
+        <span class="hidden md:inline text-slate-500">|</span>
+        <span class="hidden md:flex items-center gap-1.5 text-slate-200"><i class="fas fa-map-marker-alt text-brand-goldBright"></i> Prime City Locations & High ROI</span>
+      </div>
+      <div class="flex items-center gap-5 text-slate-200">
+        <a href="tel:+919876543210" class="hover:text-brand-goldBright transition flex items-center gap-1.5"><i class="fas fa-phone text-brand-goldBright"></i> +91 98765 43210</a>
+        <a href="mailto:info@bablubuxarealestate.com" class="hidden sm:flex hover:text-brand-goldBright transition items-center gap-1.5"><i class="fas fa-envelope text-brand-goldBright"></i> info@bablubuxarealestate.com</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Bar (Clean White Background + Blue Text + Gold Accents) -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm transition duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="flex items-center gap-3.5 group">
+        <div class="w-14 h-14 rounded-xl bg-white border border-slate-200 p-1 flex items-center justify-center shadow-md group-hover:border-brand-gold transition">
+          <img src="logo.png" alt="Bablu Buxa Real Estate Logo" class="w-full h-full object-contain">
+        </div>
+        <div class="flex flex-col">
+          <span class="font-heading font-black text-xl tracking-wider text-brand-blue">
+            BABLU <span class="text-brand-gold">BUXA</span>
+          </span>
+          <span class="text-[10px] tracking-[0.25em] font-bold text-slate-500 uppercase -mt-0.5">
+            Real Estate
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-brand-blue">
+        <a href="index.html" class="text-brand-gold border-b-2 border-brand-gold pb-1">Home</a>
+        <a href="#properties" class="hover:text-brand-gold transition">Properties</a>
+        <a href="contact.html" class="hover:text-brand-gold transition">Contact Us</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="hidden md:flex items-center gap-3">
+        <a href="contact.html" class="px-5 py-2.5 rounded-lg border-2 border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white font-bold text-sm transition">
+          <i class="fas fa-calendar-check text-brand-gold mr-1.5"></i> Book Site Visit
+        </a>
+        <a href="tel:+919876543210" class="px-5 py-2.5 rounded-lg bg-gradient-to-r from-brand-gold to-brand-goldDark text-white font-bold text-sm shadow-md hover:shadow-lg transition transform hover:-translate-y-0.5">
+          <i class="fas fa-headset mr-1.5"></i> Inquire Now
+        </a>
+      </div>
+
+      <!-- Mobile Menu Toggle -->
+      <button id="mobileMenuBtn" class="lg:hidden text-brand-blue text-2xl focus:outline-none p-2" aria-label="Toggle Navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Nav Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 py-6 space-y-4 shadow-xl">
+      <a href="index.html" class="block text-brand-gold font-bold text-base py-2">Home</a>
+      <a href="#properties" class="block text-brand-blue hover:text-brand-gold text-base py-2 font-semibold">Properties</a>
+      <a href="contact.html" class="block text-brand-blue hover:text-brand-gold text-base py-2 font-semibold">Contact Us</a>
+      <a href="terms.html" class="block text-slate-500 hover:text-brand-gold text-sm py-1">Terms & Conditions</a>
+      <a href="privacy.html" class="block text-slate-500 hover:text-brand-gold text-sm py-1">Privacy Policy</a>
+      <div class="pt-4 flex flex-col gap-3">
+        <a href="contact.html" class="text-center py-3 rounded-lg border-2 border-brand-blue text-brand-blue font-bold">Book Site Visit</a>
+        <a href="tel:+919876543210" class="text-center py-3 rounded-lg bg-brand-gold text-white font-bold">Call Now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION (40% Blue Stage with 40% Crisp White Containers & 20% Gold Accents) -->
+  <section class="relative min-h-[85vh] flex items-center justify-center overflow-hidden py-16 lg:py-20 bg-brand-deepBlue text-white">
+    <!-- Ambient Background Elements -->
+    <div class="absolute inset-0 bg-cover bg-center opacity-15" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=80');"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-brand-deepBlue via-brand-blue/90 to-brand-deepBlue"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Hero Content -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-gold/20 border border-brand-gold text-brand-goldBright text-xs font-bold uppercase tracking-wider">
+            <i class="fas fa-crown"></i> Premier Luxury Real Estate Group
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-heading font-black tracking-tight leading-tight">
+            Find Your Dream Luxury Home With <br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-goldBright via-brand-gold to-yellow-200">
+              Bablu Buxa
+            </span> Real Estate
+          </h1>
+
+          <p class="text-slate-200 text-base sm:text-lg max-w-2xl font-normal leading-relaxed">
+            Your trusted gateway to world-class residential villas, luxury sky-high apartments, prime commercial hubs, and verified investment plots with 100% legal clarity.
+          </p>
+
+          <!-- White Search Widget (40% White block) -->
+          <div class="bg-white text-slate-800 p-5 rounded-2xl shadow-2xl border-2 border-brand-gold/40">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <div>
+                <label class="block text-xs font-bold text-brand-blue uppercase tracking-wider mb-1.5">Property Type</label>
+                <select id="heroPropType" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2.5 text-sm text-slate-800 font-medium focus:outline-none focus:border-brand-gold">
+                  <option value="all">All Properties</option>
+                  <option value="villa">Luxury Villa</option>
+                  <option value="apartment">Modern Apartment</option>
+                  <option value="commercial">Commercial Hub</option>
+                  <option value="plot">Prime Plot</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-brand-blue uppercase tracking-wider mb-1.5">Location</label>
+                <select id="heroLocation" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2.5 text-sm text-slate-800 font-medium focus:outline-none focus:border-brand-gold">
+                  <option value="all">All Prime Areas</option>
+                  <option value="downtown">City Center / Downtown</option>
+                  <option value="expressway">Highway Expressway</option>
+                  <option value="greenbelt">Eco Greenbelt Enclave</option>
+                  <option value="business">Commercial Business District</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-brand-blue uppercase tracking-wider mb-1.5">Budget</label>
+                <select id="heroBudget" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2.5 text-sm text-slate-800 font-medium focus:outline-none focus:border-brand-gold">
+                  <option value="all">Any Budget</option>
+                  <option value="50-100">₹50L - ₹1.0 Cr</option>
+                  <option value="100-250">₹1.0 Cr - ₹2.5 Cr</option>
+                  <option value="250-500">₹2.5 Cr - ₹5.0 Cr</option>
+                  <option value="500+">₹5.0 Cr+ (Ultra Luxury)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="mt-4 flex flex-col sm:flex-row gap-3">
+              <a href="#properties" onclick="filterPropertiesFromHero()" class="flex-1 bg-brand-gold hover:bg-brand-goldDark text-white font-bold py-3 px-6 rounded-lg text-center transition shadow-md flex items-center justify-center gap-2">
+                <i class="fas fa-search"></i> Search Properties
+              </a>
+              <a href="contact.html" class="bg-brand-blue hover:bg-brand-deepBlue text-white font-bold py-3 px-6 rounded-lg text-center transition flex items-center justify-center gap-2">
+                <i class="fas fa-user-tie text-brand-goldBright"></i> Talk to Real Estate Expert
+              </a>
+            </div>
+          </div>
+
+          <!-- Trust Badges -->
+          <div class="grid grid-cols-3 gap-4 pt-4 border-t border-slate-700/80">
+            <div>
+              <div class="font-heading text-2xl lg:text-3xl font-bold text-brand-goldBright">500+</div>
+              <div class="text-xs text-slate-300">Verified Properties</div>
+            </div>
+            <div>
+              <div class="font-heading text-2xl lg:text-3xl font-bold text-brand-goldBright">100%</div>
+              <div class="text-xs text-slate-300">Clear Titles & RERA</div>
+            </div>
+            <div>
+              <div class="font-heading text-2xl lg:text-3xl font-bold text-brand-goldBright">15+</div>
+              <div class="text-xs text-slate-300">Years of Trust</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Visual Showcase (White Card Frame with Gold Highlights) -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            
+            <div class="relative rounded-3xl overflow-hidden border-2 border-brand-gold bg-white shadow-2xl p-3 text-slate-800">
+              <div class="relative h-80 sm:h-96 rounded-2xl overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1200&q=80" alt="Bablu Buxa Luxury Villa" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-brand-deepBlue/90 via-transparent to-transparent"></div>
+                
+                <span class="absolute top-4 left-4 bg-brand-gold text-white text-xs font-black uppercase px-3.5 py-1.5 rounded-full shadow-lg">
+                  Featured Masterpiece
+                </span>
+                
+                <span class="absolute top-4 right-4 bg-white/95 backdrop-blur-md text-brand-blue text-xs font-bold px-3 py-1.5 rounded-full border border-brand-gold">
+                  <i class="fas fa-shield-alt text-emerald-600 mr-1"></i> RERA Approved
+                </span>
+
+                <div class="absolute bottom-4 left-4 right-4 text-white">
+                  <span class="text-xs text-brand-goldBright font-bold tracking-widest uppercase">The Grand Royal Oasis</span>
+                  <h3 class="text-xl font-heading font-bold text-white">5 BHK Ultra-Luxury Villa</h3>
+                  <div class="flex justify-between items-center mt-2 pt-2 border-t border-white/20">
+                    <span class="text-xl font-bold text-brand-goldBright">₹3.75 Cr</span>
+                    <span class="text-xs text-slate-200"><i class="fas fa-map-marker-alt text-brand-goldBright mr-1"></i> Golf Course Extension</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Mini Feature Row -->
+              <div class="p-4 grid grid-cols-3 gap-2 text-center text-xs text-slate-700 font-semibold">
+                <div class="bg-brand-lightBlue p-2.5 rounded-xl border border-slate-200">
+                  <i class="fas fa-bed text-brand-gold mb-1 block text-base"></i> 5 Bedrooms
+                </div>
+                <div class="bg-brand-lightBlue p-2.5 rounded-xl border border-slate-200">
+                  <i class="fas fa-swimming-pool text-brand-gold mb-1 block text-base"></i> Private Pool
+                </div>
+                <div class="bg-brand-lightBlue p-2.5 rounded-xl border border-slate-200">
+                  <i class="fas fa-vector-square text-brand-gold mb-1 block text-base"></i> 4,800 Sq.Ft
+                </div>
+              </div>
+
+              <div class="px-4 pb-2">
+                <a href="contact.html?property=GrandRoyalOasis" class="w-full block text-center py-3 bg-brand-blue hover:bg-brand-deepBlue text-white font-bold text-xs rounded-xl shadow-md transition">
+                  Request VIP Property Tour <i class="fas fa-arrow-right text-brand-gold ml-1"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Floating Stamp -->
+            <div class="absolute -bottom-6 -left-6 bg-white border-2 border-brand-gold p-4 rounded-2xl shadow-2xl flex items-center gap-3.5 z-20">
+              <div class="w-12 h-12 rounded-xl bg-brand-lightBlue flex items-center justify-center p-1">
+                <img src="logo.png" alt="Bablu Buxa Logo" class="w-full h-full object-contain">
+              </div>
+              <div>
+                <div class="text-xs font-bold text-brand-blue">Bablu Buxa Assurance</div>
+                <div class="text-[11px] text-brand-gold font-semibold">Direct Builder & Legal Deals</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PROPERTIES SECTION (White & Pearl 40% Background with Blue & Gold Accents) -->
+  <section id="properties" class="py-20 bg-brand-pearl relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div>
+          <div class="text-brand-gold font-bold text-xs uppercase tracking-widest mb-2 flex items-center gap-2">
+            <span class="w-8 h-[2px] bg-brand-gold inline-block"></span> Exclusive Portfolio
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-heading font-black text-brand-blue">
+            Handpicked Prime Properties
+          </h2>
+          <p class="text-slate-600 text-sm mt-2 max-w-xl">
+            Explore our curated inventory of luxury villas, sky apartments, commercial hubs, and RERA verified plots.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="flex flex-wrap gap-2" id="propCategoryFilter">
+          <button onclick="filterProps('all')" class="prop-tab-btn active px-4 py-2 rounded-lg text-xs font-bold bg-brand-blue text-white border-2 border-brand-gold transition shadow">All</button>
+          <button onclick="filterProps('villa')" class="prop-tab-btn px-4 py-2 rounded-lg text-xs font-bold bg-white text-brand-blue hover:text-brand-gold border border-slate-300 transition">Villas</button>
+          <button onclick="filterProps('apartment')" class="prop-tab-btn px-4 py-2 rounded-lg text-xs font-bold bg-white text-brand-blue hover:text-brand-gold border border-slate-300 transition">Apartments</button>
+          <button onclick="filterProps('commercial')" class="prop-tab-btn px-4 py-2 rounded-lg text-xs font-bold bg-white text-brand-blue hover:text-brand-gold border border-slate-300 transition">Commercial</button>
+          <button onclick="filterProps('plot')" class="prop-tab-btn px-4 py-2 rounded-lg text-xs font-bold bg-white text-brand-blue hover:text-brand-gold border border-slate-300 transition">Plots</button>
+        </div>
+      </div>
+
+      <!-- Properties Grid (Crisp White Cards) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="propertiesContainer">
+        
+        <!-- Property 1: Villa -->
+        <div class="property-card bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-gold transition duration-300 flex flex-col group shadow-lg" data-category="villa">
+          <div class="relative h-64 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" alt="The Imperial Palm Villa" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <span class="absolute top-3 left-3 bg-brand-gold text-white text-xs font-bold px-3 py-1 rounded-md uppercase shadow">For Sale</span>
+            <span class="absolute top-3 right-3 bg-white/90 backdrop-blur-md text-emerald-700 text-xs font-bold px-2.5 py-1 rounded-md border border-emerald-500/30"><i class="fas fa-check-circle mr-1"></i> Verified</span>
+            <div class="absolute bottom-3 right-3 bg-brand-deepBlue text-brand-goldBright font-heading font-bold text-lg px-3 py-1 rounded-lg border border-brand-gold/40">
+              ₹2.95 Cr
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="text-xs text-brand-gold font-bold mb-1"><i class="fas fa-map-marker-alt mr-1"></i> Palm Meadows, Sector 45</div>
+              <h3 class="text-xl font-heading font-bold text-brand-blue group-hover:text-brand-gold transition">The Imperial Palm Villa</h3>
+              <p class="text-slate-600 text-xs mt-2 line-clamp-2">Ultra-luxury 4 BHK duplex villa with private landscaped garden, home theatre, and modern Italian finishes.</p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100">
+              <div class="grid grid-cols-3 gap-2 text-center text-xs text-slate-700 font-semibold mb-4">
+                <div class="bg-slate-50 p-2 rounded-lg"><span class="text-slate-400 block text-[10px]">Bedrooms</span><i class="fas fa-bed text-brand-gold mr-1"></i> 4 BHK</div>
+                <div class="bg-slate-50 p-2 rounded-lg"><span class="text-slate-400 block text-[10px]">Bathrooms</span><i class="fas fa-bath text-brand-gold mr-1"></i> 5 Bath</div>
+                <div class="bg-slate-50 p-2 rounded-lg"><span class="text-slate-400 block text-[10px]">Area</span><i class="fas fa-ruler-combined text-brand-gold mr-1"></i> 3,600 sqft</div>
+              </div>
+              <div class="flex gap-2">
+                <button onclick="openPropertyModal('The Imperial Palm Villa', '₹2.95 Cr', 'Palm Meadows, Sector 45', '4 BHK Duplex Villa', 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80')" class="flex-1 py-2.5 rounded-lg bg-brand-lightBlue hover:bg-slate-200 text-brand-blue font-bold text-xs transition border border-slate-300">View Details</button>
+                <a href="contact.html?property=ImperialPalmVilla" class="flex-1 text-center py-2.5 rounded-lg bg-brand-gold text-white font-bold text-xs hover:bg-brand-goldDark transition shadow">Inquire</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Property 2: Apartment -->
+        <div class="property-card bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-gold transition duration-300 flex flex-col group shadow-lg" data-category="apartment">
+          <div class="relative h-64 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80" alt="Skyline Luxury Residences" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <span class="absolute top-3 left-3 bg-brand-gold text-white text-xs font-bold px-3 py-1 rounded-md uppercase shadow">Ready To Move</span>
+            <span class="absolute top-3 right-3 bg-white/90 backdrop-blur-md text-emerald-700 text-xs font-bold px-2.5 py-1 rounded-md border border-emerald-500/30"><i class="fas fa-check-circle mr-1"></i> Verified</span>
+            <div class="absolute bottom-3 right-3 bg-brand-deepBlue text-brand-goldBright font-heading font-bold text-lg px-3 py-1 rounded-lg border border-brand-gold/40">
+              ₹1.45 Cr
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="text-xs text-brand-gold font-bold mb-1"><i class="fas fa-map-marker-alt mr-1"></i> Central Boulevard, Ring Road</div>
+              <h3 class="text-xl font-heading font-bold text-brand-blue group-hover:text-brand-gold transition">Skyline Luxury Residences</h3>
+              <p class="text-slate-600 text-xs mt-2 line-clamp-2">Contemporary 3 BHK sky apartment on high floor with 270° panoramic city skyline views & clubhouse access.</p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100">
+              <div class="grid grid-cols-3 gap-2 text-center text-xs text-slate-700 font-semibold mb-4">
+                <div class="bg-slate-50 p-2 rounded-lg"><span class="text-slate-400 block text-[10px]">Bedrooms</span><i class="fas fa-bed text-brand-gold mr-1"></i> 3 BHK</div>
+                <div class="bg-slate-50 p-2 rounded-lg"><span class="text-slate-400 block text-[10px]">Balconies</span><i class="fas fa-door-open text-brand-gold mr-1"></i> 3 Balcony</div>
+                <div class="bg-slate-50 p-2 rounded-lg"><span class="text-slate-400 block text-[10px]">Area</span><i class="fas fa-ruler-combined text-brand-gold mr-1"></i> 2,150 sqft</div>
+              </div>
+              <div class="flex gap-2">
+                <button onclick="openPropertyModal('Skyline Luxury Residences', '₹1.45 Cr', 'Central Boulevard, Ring Road', '3 BHK High Rise Apartment', 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80')" class="flex-1 py-2.5 rounded-lg bg-brand-lightBlue hover:bg-slate-200 text-brand-blue font-bold text-xs transition border border-slate-300">View Details</button>
+                <a href="contact.html?property=SkylineResidences" class="flex-1 text-center py-2.5 rounded-lg bg-brand-gold text-white font-bold text-xs hover:bg-brand-goldDark transition shadow">Inquire</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Property 3: Commercial -->
+        <div class="property-card bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-gold transition duration-300 flex flex-col group shadow-lg" data-category="commercial">
+          <div class="relative h-64 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Buxa Signature Tower" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <span class="absolute top-3 left-3 bg-brand-gold text-white text-xs font-bold px-3 py-1 rounded-md uppercase shadow">High ROI</span>
+            <span class="absolute top-3 right-3 bg-white/90 backdrop-blur-md text-emerald-700 text-xs font-bold px-2.5 py-1 rounded-md border border-emerald-500/30"><i class="fas fa-check-circle mr-1"></i> Pre-Leased</span>
+            <div class="absolute bottom-3 right-3 bg-brand-deepBlue text-brand-goldBright font-heading font-bold text-lg px-3 py-1 rounded-lg border border-brand-gold/40">
+              ₹4.80 Cr
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="text-xs text-brand-gold font-bold mb-1"><i class="fas fa-map-marker-alt mr-1"></i> Financial District, Main Highway</div>
+              <h3 class="text-xl font-heading font-bold text-brand-blue group-hover:text-brand-gold transition">Buxa Signature Tower Suites</h3>
+              <p class="text-slate-600 text-xs mt-2 line-clamp-2">Grade-A pre-leased commercial office floor with MNC corporate tenant and guaranteed 8.5% annual rental yield.</p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100">
+              <div class="grid grid-cols-3 gap-2 text-center text-xs text-slate-700 font-semibold mb-4">
+                <div class="bg-slate-50 p-2 rounded-lg"><span class="text-slate-400 block text-[10px]">Yield</span><i class="fas fa-chart-line text-brand-gold mr-1"></i> 8.5% ROI</div>
+                <div class="bg-slate-50 p-2 rounded-lg"><span class="text-slate-400 block text-[10px]">Parking</span><i class="fas fa-car text-brand-gold mr-1"></i> 6 Spots</div>
+                <div class="bg-slate-50 p-2 rounded-lg"><span class="text-slate-400 block text-[10px]">Area</span><i class="fas fa-ruler-combined text-brand-gold mr-1"></i> 5,200 sqft</div>
+              </div>
+              <div class="flex gap-2">
+                <button onclick="openPropertyModal('Buxa Signature Tower Suites', '₹4.80 Cr', 'Financial District, Main Highway', 'Grade-A Commercial Office', 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80')" class="flex-1 py-2.5 rounded-lg bg-brand-lightBlue hover:bg-slate-200 text-brand-blue font-bold text-xs transition border border-slate-300">View Details</button>
+                <a href="contact.html?property=SignatureTowerSuites" class="flex-1 text-center py-2.5 rounded-lg bg-brand-gold text-white font-bold text-xs hover:bg-brand-goldDark transition shadow">Inquire</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Property 4: Plot -->
+        <div class="property-card bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-gold transition duration-300 flex flex-col group shadow-lg" data-category="plot">
+          <div class="relative h-64 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80" alt="Royal Green Valley Plots" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <span class="absolute top-3 left-3 bg-brand-gold text-white text-xs font-bold px-3 py-1 rounded-md uppercase shadow">Gated Colony</span>
+            <span class="absolute top-3 right-3 bg-white/90 backdrop-blur-md text-emerald-700 text-xs font-bold px-2.5 py-1 rounded-md border border-emerald-500/30"><i class="fas fa-check-circle mr-1"></i> RERA Freehold</span>
+            <div class="absolute bottom-3 right-3 bg-brand-deepBlue text-brand-goldBright font-heading font-bold text-lg px-3 py-1 rounded-lg border border-brand-gold/40">
+              ₹85 Lakhs
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="text-xs text-brand-gold font-bold mb-1"><i class="fas fa-map-marker-alt mr-1"></i> Green Hills Enclave, Phase 2</div>
+              <h3 class="text-xl font-heading font-bold text-brand-blue group-hover:text-brand-gold transition">Royal Green Valley Plots</h3>
+              <p class="text-slate-600 text-xs mt-2 line-clamp-2">North-facing residential villa plot in 50-acre gated township with wide 60-ft roads, underground cabling & 24/7 security.</p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100">
+              <div class="grid grid-cols-3 gap-2 text-center text-xs text-slate-700 font-semibold mb-4">
+                <div class="bg-slate-50 p-2 rounded-lg"><span class="text-slate-400 block text-[10px]">Plot Size</span><i class="fas fa-vector-square text-brand-gold mr-1"></i> 250 Sq.Yd</div>
+                <div class="bg-slate-50 p-2 rounded-lg"><span class="text-slate-400 block text-[10px]">Facing</span><i class="fas fa-compass text-brand-gold mr-1"></i> North Facing</div>
+                <div class="bg-slate-50 p-2 rounded-lg"><span class="text-slate-400 block text-[10px]">Registry</span><i class="fas fa-file-contract text-brand-gold mr-1"></i> Immediate</div>
+              </div>
+              <div class="flex gap-2">
+                <button onclick="openPropertyModal('Royal Green Valley Plots', '₹85 Lakhs', 'Green Hills Enclave, Phase 2', 'Residential Villa Plot', 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80')" class="flex-1 py-2.5 rounded-lg bg-brand-lightBlue hover:bg-slate-200 text-brand-blue font-bold text-xs transition border border-slate-300">View Details</button>
+                <a href="contact.html?property=RoyalGreenValleyPlots" class="flex-1 text-center py-2.5 rounded-lg bg-brand-gold text-white font-bold text-xs hover:bg-brand-goldDark transition shadow">Inquire</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Property 5: Luxury Villa -->
+        <div class="property-card bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-gold transition duration-300 flex flex-col group shadow-lg" data-category="villa">
+          <div class="relative h-64 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80" alt="The Sovereign Grand Estate" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <span class="absolute top-3 left-3 bg-brand-gold text-white text-xs font-bold px-3 py-1 rounded-md uppercase shadow">Ultra Luxury</span>
+            <span class="absolute top-3 right-3 bg-white/90 backdrop-blur-md text-emerald-700 text-xs font-bold px-2.5 py-1 rounded-md border border-emerald-500/30"><i class="fas fa-check-circle mr-1"></i> Verified</span>
+            <div class="absolute bottom-3 right-3 bg-brand-deepBlue text-brand-goldBright font-heading font-bold text-lg px-3 py-1 rounded-lg border border-brand-gold/40">
+              ₹5.50 Cr
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="text-xs text-brand-gold font-bold mb-1"><i class="fas fa-map-marker-alt mr-1"></i> King's Court Avenue</div>
+              <h3 class="text-xl font-heading font-bold text-brand-blue group-hover:text-brand-gold transition">The Sovereign Grand Estate</h3>
+              <p class="text-slate-600 text-xs mt-2 line-clamp-2">Opulent 6 BHK customized signature palace with infinity pool, spa salon, private elevator, and smart home automation.</p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100">
+              <div class="grid grid-cols-3 gap-2 text-center text-xs text-slate-700 font-semibold mb-4">
+                <div class="bg-slate-50 p-2 rounded-lg"><span class="text-slate-400 block text-[10px]">Bedrooms</span><i class="fas fa-bed text-brand-gold mr-1"></i> 6 BHK</div>
+                <div class="bg-slate-50 p-2 rounded-lg"><span class="text-slate-400 block text-[10px]">Elevator</span><i class="fas fa-building text-brand-gold mr-1"></i> Private</div>
+                <div class="bg-slate-50 p-2 rounded-lg"><span class="text-slate-400 block text-[10px]">Area</span><i class="fas fa-ruler-combined text-brand-gold mr-1"></i> 6,800 sqft</div>
+              </div>
+              <div class="flex gap-2">
+                <button onclick="openPropertyModal('The Sovereign Grand Estate', '₹5.50 Cr', 'King\'s Court Avenue', '6 BHK Ultra Luxury Estate', 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80')" class="flex-1 py-2.5 rounded-lg bg-brand-lightBlue hover:bg-slate-200 text-brand-blue font-bold text-xs transition border border-slate-300">View Details</button>
+                <a href="contact.html?property=SovereignGrandEstate" class="flex-1 text-center py-2.5 rounded-lg bg-brand-gold text-white font-bold text-xs hover:bg-brand-goldDark transition shadow">Inquire</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Property 6: Penthouse -->
+        <div class="property-card bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-gold transition duration-300 flex flex-col group shadow-lg" data-category="apartment">
+          <div class="relative h-64 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" alt="The Crown Sky Penthouse" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <span class="absolute top-3 left-3 bg-brand-gold text-white text-xs font-bold px-3 py-1 rounded-md uppercase shadow">Sky Penthouse</span>
+            <span class="absolute top-3 right-3 bg-white/90 backdrop-blur-md text-emerald-700 text-xs font-bold px-2.5 py-1 rounded-md border border-emerald-500/30"><i class="fas fa-check-circle mr-1"></i> Verified</span>
+            <div class="absolute bottom-3 right-3 bg-brand-deepBlue text-brand-goldBright font-heading font-bold text-lg px-3 py-1 rounded-lg border border-brand-gold/40">
+              ₹2.20 Cr
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="text-xs text-brand-gold font-bold mb-1"><i class="fas fa-map-marker-alt mr-1"></i> Sunset Heights, Sector 62</div>
+              <h3 class="text-xl font-heading font-bold text-brand-blue group-hover:text-brand-gold transition">The Crown Sky Penthouse</h3>
+              <p class="text-slate-600 text-xs mt-2 line-clamp-2">Exquisite duplex penthouse featuring a private rooftop terrace garden, double-height living room, and jacuzzi.</p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100">
+              <div class="grid grid-cols-3 gap-2 text-center text-xs text-slate-700 font-semibold mb-4">
+                <div class="bg-slate-50 p-2 rounded-lg"><span class="text-slate-400 block text-[10px]">Bedrooms</span><i class="fas fa-bed text-brand-gold mr-1"></i> 4 BHK</div>
+                <div class="bg-slate-50 p-2 rounded-lg"><span class="text-slate-400 block text-[10px]">Terrace</span><i class="fas fa-sun text-brand-gold mr-1"></i> Private</div>
+                <div class="bg-slate-50 p-2 rounded-lg"><span class="text-slate-400 block text-[10px]">Area</span><i class="fas fa-ruler-combined text-brand-gold mr-1"></i> 3,100 sqft</div>
+              </div>
+              <div class="flex gap-2">
+                <button onclick="openPropertyModal('The Crown Sky Penthouse', '₹2.20 Cr', 'Sunset Heights, Sector 62', '4 BHK Duplex Penthouse', 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80')" class="flex-1 py-2.5 rounded-lg bg-brand-lightBlue hover:bg-slate-200 text-brand-blue font-bold text-xs transition border border-slate-300">View Details</button>
+                <a href="contact.html?property=CrownPenthouse" class="flex-1 text-center py-2.5 rounded-lg bg-brand-gold text-white font-bold text-xs hover:bg-brand-goldDark transition shadow">Inquire</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- View All CTA -->
+      <div class="mt-12 text-center">
+        <a href="contact.html" class="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-brand-gold hover:bg-brand-goldDark text-white font-bold text-sm tracking-wide transition shadow-lg transform hover:-translate-y-0.5">
+          <span>Looking for Custom Property Requirements? Contact Bablu Buxa Team</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE BABLU BUXA (Deep Blue Background + White Cards) -->
+  <section id="about" class="py-20 bg-brand-deepBlue text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Image Composition -->
+        <div class="lg:col-span-6 relative">
+          <div class="relative z-10 rounded-3xl overflow-hidden border-2 border-brand-gold shadow-2xl">
+            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1000&q=80" alt="Bablu Buxa Real Estate Advisory" class="w-full h-[460px] object-cover">
+          </div>
+          <div class="absolute -bottom-6 -right-6 w-72 bg-white text-slate-800 border-2 border-brand-gold p-5 rounded-2xl shadow-2xl z-20 hidden sm:block">
+            <div class="flex items-center gap-3">
+              <img src="logo.png" alt="Logo" class="w-12 h-12 object-contain">
+              <div>
+                <h4 class="font-heading font-bold text-brand-blue text-sm">Bablu Buxa</h4>
+                <p class="text-[11px] text-brand-gold font-bold">Excellence in Real Estate</p>
+              </div>
+            </div>
+            <p class="text-xs text-slate-600 mt-2.5">"We don't just sell properties, we build generational wealth and lifetime trust."</p>
+          </div>
+        </div>
+
+        <!-- Right Content -->
+        <div class="lg:col-span-6 space-y-6">
+          <div class="text-brand-goldBright font-bold text-xs uppercase tracking-widest flex items-center gap-2">
+            <span class="w-8 h-[2px] bg-brand-gold inline-block"></span> Why Partner With Us
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl font-heading font-black text-white leading-tight">
+            Setting the Benchmark in Trust, Transparency & Luxury
+          </h2>
+
+          <p class="text-slate-200 text-sm leading-relaxed">
+            At <strong class="text-brand-goldBright">Bablu Buxa Real Estate</strong>, we combine deep market knowledge, legal acumen, and customer-first dedication to deliver smooth, transparent, and profitable real estate transactions.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            
+            <div class="p-5 rounded-xl bg-white text-slate-800 border border-slate-200 shadow-md">
+              <div class="w-10 h-10 rounded-lg bg-brand-lightBlue flex items-center justify-center text-brand-gold text-lg mb-3">
+                <i class="fas fa-file-signature"></i>
+              </div>
+              <h4 class="font-heading font-bold text-brand-blue text-sm mb-1">100% Legal & RERA Verified</h4>
+              <p class="text-xs text-slate-600">Zero title dispute guarantee with complete document verification by property advocates.</p>
+            </div>
+
+            <div class="p-5 rounded-xl bg-white text-slate-800 border border-slate-200 shadow-md">
+              <div class="w-10 h-10 rounded-lg bg-brand-lightBlue flex items-center justify-center text-brand-gold text-lg mb-3">
+                <i class="fas fa-hand-holding-usd"></i>
+              </div>
+              <h4 class="font-heading font-bold text-brand-blue text-sm mb-1">Direct Builder Pricing</h4>
+              <p class="text-xs text-slate-600">Exclusive developer inventory with zero hidden charges and maximum negotiation leverage.</p>
+            </div>
+
+            <div class="p-5 rounded-xl bg-white text-slate-800 border border-slate-200 shadow-md">
+              <div class="w-10 h-10 rounded-lg bg-brand-lightBlue flex items-center justify-center text-brand-gold text-lg mb-3">
+                <i class="fas fa-university"></i>
+              </div>
+              <h4 class="font-heading font-bold text-brand-blue text-sm mb-1">Instant Bank Loan Support</h4>
+              <p class="text-xs text-slate-600">Tie-ups with leading banks (SBI, HDFC, ICICI) for fast approvals and lowest interest rates.</p>
+            </div>
+
+            <div class="p-5 rounded-xl bg-white text-slate-800 border border-slate-200 shadow-md">
+              <div class="w-10 h-10 rounded-lg bg-brand-lightBlue flex items-center justify-center text-brand-gold text-lg mb-3">
+                <i class="fas fa-car-side"></i>
+              </div>
+              <h4 class="font-heading font-bold text-brand-blue text-sm mb-1">Complimentary VIP Site Visits</h4>
+              <p class="text-xs text-slate-600">Chauffeured private site visit arrangements at your convenience with our senior advisors.</p>
+            </div>
+
+          </div>
+
+          <div class="pt-2">
+            <a href="contact.html" class="inline-flex items-center gap-2 text-brand-goldBright hover:text-white text-sm font-bold transition">
+              <span>Read More About Bablu Buxa Story</span>
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION (Crisp White Stage) -->
+  <section id="services" class="py-20 bg-white relative border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <div class="text-brand-gold font-bold text-xs uppercase tracking-widest mb-2">Our Capabilities</div>
+        <h2 class="text-3xl sm:text-4xl font-heading font-black text-brand-blue">Full-Spectrum Real Estate Services</h2>
+        <p class="text-slate-600 text-sm mt-3">From initial property selection to legal registration and interior turnkey solutions, we manage everything under one roof.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="p-6 rounded-2xl bg-brand-pearl border border-slate-200 hover:border-brand-gold transition group hover:-translate-y-1 shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-white border border-slate-200 flex items-center justify-center text-brand-gold text-xl mb-4 group-hover:bg-brand-blue group-hover:text-white transition shadow-sm">
+            <i class="fas fa-home"></i>
+          </div>
+          <h3 class="font-heading font-bold text-brand-blue text-base mb-2">Residential Sales</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">Luxury apartments, penthouses, villas, and independent builder floors matched to your lifestyle.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-brand-pearl border border-slate-200 hover:border-brand-gold transition group hover:-translate-y-1 shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-white border border-slate-200 flex items-center justify-center text-brand-gold text-xl mb-4 group-hover:bg-brand-blue group-hover:text-white transition shadow-sm">
+            <i class="fas fa-city"></i>
+          </div>
+          <h3 class="font-heading font-bold text-brand-blue text-base mb-2">Commercial Real Estate</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">Pre-leased office spaces, high-street retail shops, and SCO plots with guaranteed high rental yields.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-brand-pearl border border-slate-200 hover:border-brand-gold transition group hover:-translate-y-1 shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-white border border-slate-200 flex items-center justify-center text-brand-gold text-xl mb-4 group-hover:bg-brand-blue group-hover:text-white transition shadow-sm">
+            <i class="fas fa-map-marked-alt"></i>
+          </div>
+          <h3 class="font-heading font-bold text-brand-blue text-base mb-2">Plot & Land Acquisition</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">Gated colony plots, farmhouses, and industrial / commercial land parcels with clear registry.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-brand-pearl border border-slate-200 hover:border-brand-gold transition group hover:-translate-y-1 shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-white border border-slate-200 flex items-center justify-center text-brand-gold text-xl mb-4 group-hover:bg-brand-blue group-hover:text-white transition shadow-sm">
+            <i class="fas fa-balance-scale"></i>
+          </div>
+          <h3 class="font-heading font-bold text-brand-blue text-base mb-2">Legal & Financial Advisory</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">End-to-end title verification, registry assistance, home loan processing, and tax guidance.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INTERACTIVE EMI CALCULATOR (Blue Section with White Card) -->
+  <section id="calculator" class="py-20 bg-brand-blue text-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="bg-white text-slate-800 rounded-3xl border-2 border-brand-gold p-8 sm:p-12 shadow-2xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          
+          <!-- Sliders -->
+          <div class="lg:col-span-7 space-y-6">
+            <div>
+              <div class="text-brand-gold font-bold text-xs uppercase tracking-widest mb-1">Financial Planning</div>
+              <h2 class="text-2xl sm:text-3xl font-heading font-black text-brand-blue">Home Loan EMI Calculator</h2>
+              <p class="text-slate-600 text-xs mt-1">Estimate your monthly mortgage payments and plan your dream property purchase effortlessly.</p>
+            </div>
+
+            <!-- Loan Amount Slider -->
+            <div class="space-y-2">
+              <div class="flex justify-between text-xs font-bold text-brand-blue">
+                <span>Loan Amount (₹)</span>
+                <span id="loanAmountVal" class="text-brand-gold text-base font-extrabold">₹ 50,00,000</span>
+              </div>
+              <input type="range" id="loanAmount" min="500000" max="50000000" step="100000" value="5000000" class="w-full accent-brand-gold cursor-pointer" oninput="calculateEMI()">
+              <div class="flex justify-between text-[11px] text-slate-400 font-semibold">
+                <span>₹5 Lakh</span>
+                <span>₹5 Crore</span>
+              </div>
+            </div>
+
+            <!-- Interest Rate Slider -->
+            <div class="space-y-2">
+              <div class="flex justify-between text-xs font-bold text-brand-blue">
+                <span>Interest Rate (% P.A.)</span>
+                <span id="interestRateVal" class="text-brand-gold text-base font-extrabold">8.5 %</span>
+              </div>
+              <input type="range" id="interestRate" min="6.5" max="15" step="0.1" value="8.5" class="w-full accent-brand-gold cursor-pointer" oninput="calculateEMI()">
+              <div class="flex justify-between text-[11px] text-slate-400 font-semibold">
+                <span>6.5%</span>
+                <span>15.0%</span>
+              </div>
+            </div>
+
+            <!-- Tenure Slider -->
+            <div class="space-y-2">
+              <div class="flex justify-between text-xs font-bold text-brand-blue">
+                <span>Loan Tenure (Years)</span>
+                <span id="tenureVal" class="text-brand-gold text-base font-extrabold">20 Years</span>
+              </div>
+              <input type="range" id="tenure" min="1" max="30" step="1" value="20" class="w-full accent-brand-gold cursor-pointer" oninput="calculateEMI()">
+              <div class="flex justify-between text-[11px] text-slate-400 font-semibold">
+                <span>1 Year</span>
+                <span>30 Years</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Result Card (Blue Box inside White Frame) -->
+          <div class="lg:col-span-5 bg-brand-deepBlue text-white p-6 sm:p-8 rounded-2xl border-2 border-brand-gold text-center flex flex-col justify-between shadow-xl">
+            <div>
+              <span class="text-xs uppercase tracking-widest text-slate-300 font-bold">Estimated Monthly EMI</span>
+              <div id="monthlyEMI" class="text-3xl sm:text-4xl font-heading font-black text-brand-goldBright mt-2">
+                ₹ 43,391
+              </div>
+            </div>
+
+            <div class="my-6 space-y-3 pt-6 border-t border-slate-700 text-left text-xs font-medium">
+              <div class="flex justify-between">
+                <span class="text-slate-300">Principal Amount:</span>
+                <span id="calcPrincipal" class="font-bold text-white">₹ 50,00,000</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-slate-300">Total Interest Payable:</span>
+                <span id="calcInterest" class="font-bold text-brand-goldBright">₹ 54,13,879</span>
+              </div>
+              <div class="flex justify-between border-t border-slate-700 pt-2 font-bold text-sm">
+                <span class="text-slate-200">Total Amount Payable:</span>
+                <span id="calcTotal" class="text-white">₹ 1,04,13,879</span>
+              </div>
+            </div>
+
+            <a href="contact.html?subject=HomeLoanAssistance" class="w-full block py-3 rounded-lg bg-brand-gold hover:bg-brand-goldDark text-white font-black text-xs uppercase tracking-wider transition shadow-md">
+              Apply For Home Loan Assistance
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS SECTION -->
+  <section id="testimonials" class="py-20 bg-brand-pearl border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <div class="text-brand-gold font-bold text-xs uppercase tracking-widest mb-2">Client Testimonials</div>
+        <h2 class="text-3xl sm:text-4xl font-heading font-black text-brand-blue">What Our Valued Clients Say</h2>
+        <p class="text-slate-600 text-sm mt-3">Hear from families, entrepreneurs, and investors who found their ideal property with Bablu Buxa Real Estate.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-md flex flex-col justify-between">
+          <div>
+            <div class="flex text-brand-gold text-sm gap-1 mb-4">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="text-slate-600 text-xs leading-relaxed italic">
+              "Buying our dream 4 BHK villa with Bablu Buxa was the smoothest experience. Their legal team did every verification upfront and got us direct developer discounts."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mt-6 pt-4 border-t border-slate-100">
+            <div class="w-10 h-10 rounded-full bg-brand-blue text-brand-gold font-bold text-sm flex items-center justify-center">
+              RS
+            </div>
+            <div>
+              <h5 class="text-brand-blue font-bold text-xs">Rajesh Sharma</h5>
+              <span class="text-[10px] text-slate-500">Luxury Villa Owner, Sector 45</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-md flex flex-col justify-between">
+          <div>
+            <div class="flex text-brand-gold text-sm gap-1 mb-4">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="text-slate-600 text-xs leading-relaxed italic">
+              "Bablu Buxa helped our enterprise acquire a pre-leased commercial floor in the financial district. The rental yield has been outstanding, exactly as projected."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mt-6 pt-4 border-t border-slate-100">
+            <div class="w-10 h-10 rounded-full bg-brand-blue text-brand-gold font-bold text-sm flex items-center justify-center">
+              AK
+            </div>
+            <div>
+              <h5 class="text-brand-blue font-bold text-xs">Amit Kapoor</h5>
+              <span class="text-[10px] text-slate-500">Commercial Investor</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-md flex flex-col justify-between">
+          <div>
+            <div class="flex text-brand-gold text-sm gap-1 mb-4">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="text-slate-600 text-xs leading-relaxed italic">
+              "Extremely honest and transparent. No hidden charges and complete registry support. Truly the most reliable real estate brand in the market!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mt-6 pt-4 border-t border-slate-100">
+            <div class="w-10 h-10 rounded-full bg-brand-blue text-brand-gold font-bold text-sm flex items-center justify-center">
+              PV
+            </div>
+            <div>
+              <h5 class="text-brand-blue font-bold text-xs">Pooja Verma</h5>
+              <span class="text-[10px] text-slate-500">Homebuyer, Skyline Residences</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CALL TO ACTION BANNER (20% Gold Highlight Bar) -->
+  <section class="py-16 bg-gradient-to-r from-brand-gold via-brand-goldBright to-brand-goldDark text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+      <h2 class="text-3xl sm:text-4xl font-heading font-black tracking-tight mb-4">
+        Ready To Find Your Dream Property?
+      </h2>
+      <p class="text-white/90 max-w-xl mx-auto text-sm sm:text-base font-medium mb-8">
+        Speak directly with our senior real estate consultants today or book a complimentary VIP property tour.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="contact.html" class="px-8 py-4 bg-brand-deepBlue hover:bg-brand-blue text-white font-bold text-sm rounded-xl shadow-2xl transition transform hover:-translate-y-0.5 flex items-center gap-2">
+          <i class="fas fa-envelope text-brand-gold"></i> Contact Us Today
+        </a>
+        <a href="tel:+919876543210" class="px-8 py-4 bg-white text-brand-blue hover:bg-slate-100 font-bold text-sm rounded-xl shadow-xl transition transform hover:-translate-y-0.5 flex items-center gap-2">
+          <i class="fas fa-phone-alt text-brand-gold"></i> Call: +91 98765 43210
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER (40% Deep Blue + White Text + Gold Accents) -->
+  <footer class="bg-brand-deepBlue border-t border-brand-gold/30 pt-16 pb-8 text-slate-300 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-700">
+        
+        <!-- Brand Info -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-white border border-brand-gold p-1 flex items-center justify-center">
+              <img src="logo.png" alt="Bablu Buxa Logo" class="w-full h-full object-contain">
+            </div>
+            <div>
+              <span class="font-heading font-black text-lg text-white">BABLU <span class="text-brand-gold">BUXA</span></span>
+              <span class="block text-[10px] uppercase tracking-widest text-slate-400 font-bold -mt-1">Real Estate</span>
+            </div>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed max-w-sm">
+            Bablu Buxa Real Estate is a premier real estate advisory firm dedicated to delivering premium luxury residences, high-yield commercial hubs, and verified investment plots.
+          </p>
+          <div class="flex gap-3 text-white">
+            <a href="#" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-brand-gold flex items-center justify-center transition"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-brand-gold flex items-center justify-center transition"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-brand-gold flex items-center justify-center transition"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-brand-gold flex items-center justify-center transition"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="font-heading font-bold text-white text-sm mb-4">Quick Navigation</h4>
+          <ul class="space-y-2.5">
+            <li><a href="index.html" class="hover:text-brand-goldBright transition">Home</a></li>
+            <li><a href="#properties" class="hover:text-brand-goldBright transition">Properties</a></li>
+            <li><a href="#services" class="hover:text-brand-goldBright transition">Services</a></li>
+            <li><a href="#about" class="hover:text-brand-goldBright transition">About Us</a></li>
+            <li><a href="#calculator" class="hover:text-brand-goldBright transition">EMI Calculator</a></li>
+            <li><a href="contact.html" class="hover:text-brand-goldBright transition">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal & Policies (Terms & Conditions, Privacy Policy) -->
+        <div>
+          <h4 class="font-heading font-bold text-white text-sm mb-4">Legal & Policies</h4>
+          <ul class="space-y-2.5">
+            <li><a href="terms.html" class="hover:text-brand-goldBright transition">Terms & Conditions</a></li>
+            <li><a href="privacy.html" class="hover:text-brand-goldBright transition">Privacy Policy</a></li>
+            <li><a href="terms.html#disclaimer" class="hover:text-brand-goldBright transition">RERA Compliance</a></li>
+            <li><a href="privacy.html#cookies" class="hover:text-brand-goldBright transition">Cookie Policy</a></li>
+            <li><a href="contact.html" class="hover:text-brand-goldBright transition">Customer Grievances</a></li>
+          </ul>
+        </div>
+
+        <!-- Direct Contact -->
+        <div>
+          <h4 class="font-heading font-bold text-white text-sm mb-4">Get In Touch</h4>
+          <ul class="space-y-3 text-xs">
+            <li class="flex items-start gap-2.5">
+              <i class="fas fa-map-marker-alt text-brand-goldBright mt-0.5"></i>
+              <span>Bablu Buxa Real Estate Corporate Office, City Center Plaza</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i class="fas fa-phone text-brand-goldBright"></i>
+              <a href="tel:+919876543210" class="hover:text-brand-goldBright transition">+91 98765 43210</a>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i class="fas fa-envelope text-brand-goldBright"></i>
+              <a href="mailto:info@bablubuxarealestate.com" class="hover:text-brand-goldBright transition">info@bablubuxarealestate.com</a>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i class="fas fa-clock text-brand-goldBright"></i>
+              <span>Mon - Sat: 9:00 AM - 8:00 PM</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-400">
+        <p>&copy; 2026 Bablu Buxa Real Estate. All Rights Reserved.</p>
+        <div class="flex gap-4">
+          <a href="terms.html" class="hover:text-brand-goldBright transition">Terms & Conditions</a>
+          <span>•</span>
+          <a href="privacy.html" class="hover:text-brand-goldBright transition">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- PROPERTY DETAIL MODAL -->
+  <div id="propertyModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-white text-slate-800 border-2 border-brand-gold rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl p-6 relative">
+      <button onclick="closePropertyModal()" class="absolute top-4 right-4 text-slate-500 hover:text-brand-blue text-xl">
+        <i class="fas fa-times"></i>
+      </button>
+      
+      <div id="modalContent" class="space-y-4">
+        <!-- Injected via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>

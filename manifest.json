@@ -1,0 +1,10 @@
+{
+  "source": "1000325049.mp4",
+  "frames": 240,
+  "fps": 24.0,
+  "width": 1280,
+  "height": 720,
+  "format": "WebP",
+  "quality": 95,
+  "sequence": "frame_0000.webp ... frame_0239.webp"
+}

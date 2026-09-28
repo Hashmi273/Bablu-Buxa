@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | Bablu Buxa Real Estate</title>
+  <meta name="description" content="Privacy Policy for Bablu Buxa Real Estate. Learn how we protect your personal information, contact data, and property inquiries.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              blue: '#0B2545',
+              deepBlue: '#06182D',
+              slateBlue: '#133E68',
+              lightBlue: '#F0F6FC',
+              white: '#FFFFFF',
+              pearl: '#F8FAFC',
+              gold: '#C69214',
+              goldBright: '#D4AF37',
+              goldLight: '#FBF4DC',
+              goldDark: '#9E740E',
+            }
+          },
+          fontFamily: {
+            heading: ['Cinzel', 'serif'],
+            display: ['Playfair Display', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-brand-pearl text-slate-800 font-sans antialiased selection:bg-brand-gold selection:text-white">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-brand-deepBlue border-b border-brand-gold/30 py-2 px-4 text-xs font-medium text-white">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center gap-4">
+        <span class="flex items-center gap-1.5 text-brand-goldBright font-semibold"><i class="fas fa-user-shield"></i> 100% Client Privacy & Data Security</span>
+        <span class="hidden md:inline text-slate-500">|</span>
+        <span class="hidden md:flex items-center gap-1.5 text-slate-200"><i class="fas fa-lock text-brand-goldBright"></i> Encrypted Inquiries</span>
+      </div>
+      <div class="flex items-center gap-5 text-slate-200">
+        <a href="tel:+919876543210" class="hover:text-brand-goldBright transition flex items-center gap-1.5"><i class="fas fa-phone text-brand-goldBright"></i> +91 98765 43210</a>
+        <a href="mailto:privacy@bablubuxarealestate.com" class="hidden sm:flex hover:text-brand-goldBright transition items-center gap-1.5"><i class="fas fa-envelope text-brand-goldBright"></i> privacy@bablubuxarealestate.com</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Bar -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm transition duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="flex items-center gap-3.5 group">
+        <div class="w-14 h-14 rounded-xl bg-white border border-slate-200 p-1 flex items-center justify-center shadow-md group-hover:border-brand-gold transition">
+          <img src="logo.png" alt="Bablu Buxa Real Estate Logo" class="w-full h-full object-contain">
+        </div>
+        <div class="flex flex-col">
+          <span class="font-heading font-black text-xl tracking-wider text-brand-blue">
+            BABLU <span class="text-brand-gold">BUXA</span>
+          </span>
+          <span class="text-[10px] tracking-[0.25em] font-bold text-slate-500 uppercase -mt-0.5">
+            Real Estate
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-brand-blue">
+        <a href="index.html" class="hover:text-brand-gold transition">Home</a>
+        <a href="index.html#properties" class="hover:text-brand-gold transition">Properties</a>
+        <a href="contact.html" class="hover:text-brand-gold transition">Contact Us</a>
+      </nav>
+
+      <!-- Action Button -->
+      <div class="hidden md:flex items-center gap-3">
+        <a href="contact.html" class="px-5 py-2.5 rounded-lg bg-gradient-to-r from-brand-gold to-brand-goldDark text-white font-bold text-sm shadow-md hover:shadow-lg transition">
+          <i class="fas fa-envelope mr-1.5"></i> Inquire Securely
+        </a>
+      </div>
+
+      <!-- Mobile Menu Toggle -->
+      <button id="mobileMenuBtn" class="lg:hidden text-brand-blue text-2xl focus:outline-none p-2" aria-label="Toggle Navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Nav Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 py-6 space-y-4 shadow-xl">
+      <a href="index.html" class="block text-brand-blue hover:text-brand-gold font-bold text-base py-2">Home</a>
+      <a href="index.html#properties" class="block text-brand-blue hover:text-brand-gold text-base py-2 font-semibold">Properties</a>
+      <a href="contact.html" class="block text-brand-blue hover:text-brand-gold text-base py-2 font-semibold">Contact Us</a>
+      <a href="terms.html" class="block text-brand-blue hover:text-brand-gold text-base py-2 font-semibold">Terms & Conditions</a>
+      <a href="privacy.html" class="block text-brand-gold font-bold text-base py-2">Privacy Policy</a>
+    </div>
+  </header>
+
+  <!-- PAGE HEADER (40% Blue) -->
+  <section class="py-16 bg-brand-deepBlue text-white border-b border-brand-gold/30 text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <span class="inline-block text-brand-goldBright font-bold text-xs uppercase tracking-widest mb-2">Data Protection</span>
+      <h1 class="text-3xl sm:text-5xl font-heading font-black">Privacy Policy</h1>
+      <p class="text-slate-300 text-sm mt-3">Last Updated: September 2026 | Bablu Buxa Real Estate Privacy Framework</p>
+    </div>
+  </section>
+
+  <!-- PRIVACY CONTENT (40% White Background) -->
+  <section class="py-16 bg-brand-pearl">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      
+      <div class="bg-white border-2 border-slate-200 rounded-3xl p-8 sm:p-12 shadow-xl space-y-8 text-slate-700 text-sm leading-relaxed">
+        
+        <!-- Section 1 -->
+        <div>
+          <h2 class="text-xl font-heading font-bold text-brand-blue flex items-center gap-2 mb-3">
+            <span class="w-2.5 h-6 bg-brand-gold rounded-full inline-block"></span> 1. Commitment to Privacy
+          </h2>
+          <p>
+            At <strong>Bablu Buxa Real Estate</strong>, your confidentiality and personal data security are paramount. This Privacy Policy details how we collect, handle, protect, and utilize your personal information when inquiring about residential, commercial, or plot real estate properties.
+          </p>
+        </div>
+
+        <!-- Section 2 -->
+        <div>
+          <h2 class="text-xl font-heading font-bold text-brand-blue flex items-center gap-2 mb-3">
+            <span class="w-2.5 h-6 bg-brand-gold rounded-full inline-block"></span> 2. Information We Collect
+          </h2>
+          <p>We only collect information necessary to deliver quality property consulting services:</p>
+          <ul class="list-disc list-inside mt-2 space-y-1.5 text-slate-600 pl-2">
+            <li><strong>Contact Details:</strong> Name, phone/mobile number, email address.</li>
+            <li><strong>Property Preferences:</strong> Desired property type, location, budget range, and site visit preferences.</li>
+            <li><strong>Technical Data:</strong> Browser cookies, IP address, and analytics to optimize website browsing.</li>
+          </ul>
+        </div>
+
+        <!-- Section 3 -->
+        <div>
+          <h2 class="text-xl font-heading font-bold text-brand-blue flex items-center gap-2 mb-3">
+            <span class="w-2.5 h-6 bg-brand-gold rounded-full inline-block"></span> 3. How We Use Your Data
+          </h2>
+          <p>
+            Your information is exclusively used by Bablu Buxa Real Estate senior consultants to:
+          </p>
+          <ul class="list-disc list-inside mt-2 space-y-1.5 text-slate-600 pl-2">
+            <li>Provide verified property brochures, floor plans, and pricing estimates.</li>
+            <li>Schedule requested VIP private property inspections and site visits.</li>
+            <li>Deliver mortgage/bank loan feasibility guidance and legal document checklists.</li>
+            <li>Send real estate market updates and new luxury project launches (with full opt-out rights).</li>
+          </ul>
+        </div>
+
+        <!-- Section 4 -->
+        <div id="cookies">
+          <h2 class="text-xl font-heading font-bold text-brand-blue flex items-center gap-2 mb-3">
+            <span class="w-2.5 h-6 bg-brand-gold rounded-full inline-block"></span> 4. Cookies & Tracking Technologies
+          </h2>
+          <p>
+            We use secure cookies to enhance your browsing experience, remember your property search filters, and analyze aggregate web traffic. You can adjust your browser settings to decline cookies at any time.
+          </p>
+        </div>
+
+        <!-- Section 5 -->
+        <div>
+          <h2 class="text-xl font-heading font-bold text-brand-blue flex items-center gap-2 mb-3">
+            <span class="w-2.5 h-6 bg-brand-gold rounded-full inline-block"></span> 5. No Third-Party Data Selling
+          </h2>
+          <p>
+            We have a strict <strong>zero-spam, zero-resale guarantee</strong>. We will never sell, lease, or distribute your private contact details to external marketing agencies or unauthorized third parties.
+          </p>
+        </div>
+
+        <!-- Section 6 -->
+        <div>
+          <h2 class="text-xl font-heading font-bold text-brand-blue flex items-center gap-2 mb-3">
+            <span class="w-2.5 h-6 bg-brand-gold rounded-full inline-block"></span> 6. Data Security & Storage
+          </h2>
+          <p>
+            All submitted inquiry forms and communications are protected with industry-standard TLS encryption protocols and stored on secure servers with restricted personnel access.
+          </p>
+        </div>
+
+        <!-- Contact Box -->
+        <div class="bg-brand-lightBlue border border-brand-gold/40 p-6 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div>
+            <h4 class="font-bold text-brand-blue text-base">Privacy Queries or Data Erasure?</h4>
+            <p class="text-xs text-slate-600">Email our Data Protection Officer directly.</p>
+          </div>
+          <a href="mailto:privacy@bablubuxarealestate.com" class="px-6 py-2.5 bg-brand-blue hover:bg-brand-deepBlue text-white font-bold text-xs rounded-xl shadow transition">
+            Email Privacy Officer
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-brand-deepBlue border-t border-brand-gold/30 pt-12 pb-8 text-slate-300 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+      <div class="flex justify-center items-center gap-3">
+        <img src="logo.png" alt="Logo" class="w-10 h-10 object-contain bg-white rounded-lg p-1">
+        <span class="font-heading font-bold text-lg text-white">BABLU <span class="text-brand-gold">BUXA</span> REAL ESTATE</span>
+      </div>
+      <p class="text-slate-400 text-xs max-w-lg mx-auto">&copy; 2026 Bablu Buxa Real Estate. All rights reserved. RERA Registered & Legal Partner.</p>
+      <div class="flex justify-center gap-6 pt-2 text-slate-400">
+        <a href="index.html" class="hover:text-brand-goldBright">Home</a>
+        <a href="contact.html" class="hover:text-brand-goldBright">Contact Us</a>
+        <a href="terms.html" class="hover:text-brand-goldBright">Terms & Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
