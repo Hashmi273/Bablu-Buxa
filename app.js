@@ -125,7 +125,7 @@ function openPropertyModal(title, price, location, type, imgSrc) {
         <a href="contact.html?property=${encodeURIComponent(title)}" class="flex-1 text-center py-3 bg-brand-gold hover:bg-brand-goldDark text-brand-deepNavy font-bold text-xs rounded-xl transition">
           Book Private Site Visit
         </a>
-        <a href="https://wa.me/919876543210?text=Hi%20Bablu%20Buxa%20Real%20Estate,%20I%20am%20interested%20in%20${encodeURIComponent(title)}%20(${price})" target="_blank" class="px-5 py-3 bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-xs rounded-xl transition flex items-center gap-2">
+        <a href="https://wa.me/918578883632?text=Hi%20Bablu%20Buxa%20Real%20Estate,%20I%20am%20interested%20in%20${encodeURIComponent(title)}%20(${price})" target="_blank" class="px-5 py-3 bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-xs rounded-xl transition flex items-center gap-2">
           <i class="fab fa-whatsapp text-base"></i> WhatsApp
         </a>
       </div>
@@ -166,7 +166,7 @@ function handleContactSubmit(e) {
   if (whatsappConsent) {
     setTimeout(() => {
       const waText = `Hi Bablu Buxa Real Estate,%0A%0AMy Name: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0AInterest: ${encodeURIComponent(interest)}%0ABudget: ${encodeURIComponent(budget)}%0AMessage: ${encodeURIComponent(message)}`;
-      window.open(`https://wa.me/919876543210?text=${waText}`, '_blank');
+      window.open(`https://wa.me/918578883632?text=${waText}`, '_blank');
     }, 1500);
   }
 
